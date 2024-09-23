@@ -112,8 +112,7 @@ class Teacher extends Person {
     private int experience;
     private static int teacherCount = 0;
     private static double allsalary = 0;
-
-    // Конструктор
+    
     public Teacher(String name, int age, String institute, String subject, double salary, int experience) {
         super(name, age, institute);
         this.subject = subject;
@@ -121,9 +120,7 @@ class Teacher extends Person {
         this.experience = experience;
         teacherCount++;
         allsalary+= salary;
-    }
-
-    // Геттеры и сеттеры
+   
     public String getSubject() {
         return subject;
     }
